@@ -51,22 +51,19 @@ li{
   object-fit: cover;
 }
 
-.carrusel {
-  height: 40vh;
+.carousel {
   display: flex;
   position: relative;
-  height: 170px;
+  height: 190px;
 }
 
-.carrusel-items {
-display: flex;
-overflow-x: hidden;
-overflow-y: hidden;
-padding: 0px;
+.col{
+  height: 190px;
+  padding: 0;
 }
 
 .fotitos {
-  height: 160px;
+  height: 190px;
   object-fit: contain;
 }
 
@@ -104,8 +101,7 @@ left: 10px;
 .fichas {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 80px 200px 100px 200px;
 }
 
 #laureles{
@@ -190,6 +186,7 @@ margin: -20px 42% 0px 42%;
 border: 1.5px solid #979392;
 color: #979392;
 font-size: 30px;
+height: 550px;
 }
 
 .Book1{
@@ -370,154 +367,262 @@ font-size: 25px;
 padding-top: 0;
 }
 
-@media only screen and (max-width: 700px){
-*{
-  overflow-x: hidden;
-}
 
-#videoo{
-  height: 290px;
-}
+@media only screen and (max-width: 420px){
 
+  *{
+    overflow-x: hidden;
+  }
 
-.fotitos {
-  height: 60px;
-}
+  #logo{
+    height: 40px;
+  }
 
-#Book{
-text-align: center;
-width: 100%;
-margin: -40px 0px 0px 0px;
-}
+  #film{
+    font-size: 15px;
+    margin-left: 190px;
+    margin-top: 17px;
+  }
 
-.contenedorBookACall{
-  display: block;
+  #videoo{
+    height: 290px;
+  }
+
+  .carousel {
+    height: 60px;
+  }
+  
+  .col{  
+    height: 60px;
+  }
+  
+  .fotitos {
+    height: 60px;
+  }
+
+  .fichas {
+    margin: 50px 5px;
+    height: 450px;
+  }
+
+  .flex-item {
+    margin: 15px auto;
+    height: 100px;
+    width: 100px;
+    font-size: 15px;
+    }
+    
+    .dato1{
+    font-size: 25px;
+    margin-top: 15px;
+    }
+    
+    #dato9{
+      font-size: 20px;
+      margin-top: 10px;
+      }
+    
+    #laureles{
+      height: 30px;
+      margin: 10px 20px 10px -20px;
+    }
+    
+    .dato10{
+    font-size: 12px;
+    }
+    
+    .infinito{
+    margin-top: -30px;
+    font-size: 70px;
+    }
+    
+    #post-production{
+      margin-top: -50px;
+      font-size: 10px;
+    }
+    
+    .corazon{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 50px;
+    width: 60px;
+    }
+  
+  
+
+  
+  #Book{
+  text-align: center;
   width: 100%;
+  margin: 0px;
+  margin-bottom: 20px;
   padding: 0;
+  }
+  
+  .BookACall{
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .contenedorBookACall{
+    display: block;
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .Book1{
+    height: 450px;
+  }
+
+  .sebas{
+    width: 100%;
+  }
+  
+  #sebas{
+    margin-top: 50px;
+    }
+  
+  .Book2{
+    height: 300px;
+    margin: 0;
+    padding: 0px;
+  }
+
+  .contenedorIconoParrafoUl{
+    padding: 0;
+    margin: 0px;
+    width: 100%;
+    height: 280px;
+  }
+  
+  .contenedorIconoParrafo{
+    margin: 10px 0 10px 0;
+    height: 80px;
+  
+  }
+  
+  .Book2 p{
+  width: 280px;
+  padding-left: 10px;
+  margin-left: 10px;
+  font-size: 25px;
+  text-align: justify;
+  }
+  
+.contenedorIconos{
+  width: 60px;
+  height: 70px;
   margin: 0;
+  padding: 10px;
 }
 
-.sebas{
-  width: 100%;
-}
+  .iconos{
+  width: 40px;
+  height: 40px;
+  margin: 0;
 
-#sebas{
-  background-color: aqua;
   }
-
-.contenedorIconoParrafoUl{
-  padding: 0;
-  margin: 80px 0px 5px 0;
-  width: 100%;
-}
-
-.contenedorIconoParrafo{
-  margin: 10px 0 10px 0;
-  height: 80px;
-
-}
-
-.Book2 p{
-width: 280px;
-padding-left: 10px;
-margin-left: 18px;
-font-size: 25px;
-text-align: justify;
-}
-
-.iconos{
-width: 40px;
-height: 40px;
-position: absolute;
-margin-top: 15px;
-}
-
-#Read{
-margin-left: 0px;
-  }
-
-#socialMedia{
-width: 0px;
-height: 0px;
-padding: 0px;
-margin: 0px;
-}
-
-#socialMedia p{
-width: 0px;
-height: 0px;
-padding: 0px;
-margin: 0px;
-}
-
-#footerArriba{
-  padding-top: 15px;
-  height: 50px;
-  margin-bottom: -20px;
-  padding-bottom: -20px;
-}
-
-.iconos{
-object-fit: cover;
-width: 40px;
-height: 40px;
-border-radius: 50%;
-margin: 5px;
-padding-top: 0px;
-margin-top: -10px;
-}
-
-#contenedorLogo{
-margin-top: 20px;
-margin-left: 130px;
-width: 40%;
-height: 50px;
-}
-
-.p-2{
-  width: 100%;
-}
-
-#logo2{
+  
+  #Read{
+  margin-left: 0px;
+    }
+  
+  #socialMedia{
+  width: 0px;
+  height: 0px;
   padding: 0px;
-  margin: 0;
+  margin: 0px;
+  }
+  
+  #socialMedia p{
+  width: 0px;
+  height: 0px;
+  padding: 0px;
+  margin: 0px;
+  }
+  
+  #footerArriba{
+    padding-top: 15px;
+    height: 50px;
+    margin-bottom: -20px;
+    padding-bottom: -20px;
+  }
+  
+  .iconos{
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 5px;
+  padding-top: 0px;
+  margin-top: -10px;
+  }
+  
+  #contenedorLogo{
+  margin-top: 20px;
+  margin-left: 130px;
+  width: 40%;
+  height: 50px;
+  }
+  
+  .p-2{
+    width: 100%;
+  }
+  
+  #logo2{
+    padding: 0px;
+    margin: 0;
+    color: white;
+    font-size: 0px;
+    height: 0px;
+  }
+  
+  #footerAbajo{
+  height: 40px;
+  margin-top: -10px;
+  padding-top: 0px;
+  }
+  
+  #privacyFilm{
+    display: flex;
+  }
+  
+  #contenedorPrivacy{
+  width: 50%;
+  height: 50px;
+  margin-top: -10px;
+  }
+  
+  #Privacy{
+  color: #aca7a6;
+  font-size: 18px;
+  }
+  
+  #contenedorFilm2{
+  width: 0px;
+  height: 0px;
+  margin-top: 0px;
+  }
+  
+  #Film2{
   color: white;
   font-size: 0px;
-  height: 0px;
+  padding: 0;
+  margin: 0;
+  }
+  
+
 }
 
-#footerAbajo{
-height: 40px;
-margin-top: -10px;
-padding-top: 0px;
+@media only screen and (min-width: 421px) and (max-width: 1023px) {
 }
 
-#privacyFilm{
-  display: flex;
-}
-
-#contenedorPrivacy{
-width: 50%;
-height: 50px;
-margin-top: -10px;
-}
-
-#Privacy{
-color: #aca7a6;
-font-size: 18px;
-}
-
-#contenedorFilm2{
-width: 0px;
-height: 0px;
-margin-top: 0px;
-}
-
-#Film2{
-color: white;
-font-size: 0px;
-padding: 0;
-margin: 0;
-}
-
+@media only screen and (min-width: 1024px){
+    
 }
